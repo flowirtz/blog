@@ -32,7 +32,7 @@ async function generate() {
     })
   )
 
-  await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
+  await fs.writeFile('./public/blog/feed.xml', feed.xml({ indent: true }))
 }
 
 generate()
